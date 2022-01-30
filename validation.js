@@ -1,10 +1,10 @@
 console.log("validation form");
-const name = document.getElementById('name');
+const name  = document.getElementById('name');
 const email = document.getElementById('email');
 const phone = document.getElementById('phone');
-let validName=false;
-let validEmail=false;
-let validPhone=false;
+let validName  =false;
+let validEmail =false;
+let validPhone =false;
 // console.log(name,email,phone);
 name.addEventListener('blur', ()=>{
     console.log("name is blurred");
@@ -42,6 +42,7 @@ email.addEventListener('blur', ()=>{
         validEmail=false;
     }
 });
+
 phone.addEventListener('blur', ()=>{
     console.log("phone is blurred");
     let reg=/^([0-9]){10}$/;
